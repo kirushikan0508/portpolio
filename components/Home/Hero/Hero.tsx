@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import Typewriter from 'typewriter-effect'
 
 const Hero = () => {
   return (
@@ -12,6 +14,27 @@ const Hero = () => {
           height={150}
           className='rounded-full border-8 border-[#0c0c48aa]'
         />
+        <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide'>
+          Creating web proucts, <br/><span className='text-cyan-200'>brands, and experiences.</span>
+        </h1>
+        <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center'>
+          Hi! I'm Kirushikan - A passionate
+          <span className='text-cyan-200 font-bold'>
+            <Typewriter options={{
+              strings:[
+                'Frontend Developer',
+                'Backend Developer',
+                'AI and ML',
+                'Data Analysis'
+              ],
+              autoStart:true,
+              loop:true,
+              delay:75,
+              deleteSpeed:50,
+              wrapperClassName:'pl-2'
+            }}/>
+          </span>
+        </h2>
       </div>
     </div>
   )
